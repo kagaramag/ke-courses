@@ -185,7 +185,8 @@ label:focus {
 .wrap-categories .one-cat {
   margin: 0 10px;
   border-radius: 8px 50px 8px 50px;
-  border-top: 6px solid #403ea8;
+  border-top: 10px solid #403ea8;
+  border-bottom: 10px solid #403ea8;
 }
 
 #about-us {
