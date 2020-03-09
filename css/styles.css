@@ -121,7 +121,7 @@ h5 {
 }
 
 .text-roboto {
-  font-family: var(--roboto) !important;
+  font-family: var(--roboto);
 }
 
 .text-arial {
@@ -145,12 +145,10 @@ h5 {
 }
 
 /* !! overwrite bootstrap blue border!! */
-input:active,
-input:focus,
-label:focus {
-  outline: 1px !important;
+.form-control:focus {
+  outline: 1px;
   -webkit-appearance: none;
-  box-shadow: none !important;
+  box-shadow: none;
   background: transparent;
 }
 
@@ -175,7 +173,7 @@ label:focus {
 }
 
 .radius-6 {
-  border-radius: 50% !important;
+  border-radius: 50%;
 }
 
 .welcome-none {
