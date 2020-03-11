@@ -1,0 +1,323 @@
+:root {
+  --roboto: 'Roboto Condensed', sans-serif;
+  --helvetica: 'Roboto', sans-serif;
+  --source-pro: 'Source Sans Pro';
+  --color-black: #000;
+  --color-white: #fff;
+  --color-danger: #f62110;
+  --color-brand: #403ea8;
+  --color-gray-light: #c0c0c0;
+  --color-gray-dark: #333;
+}
+
+body {
+  font-family: var(--helvetica);
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+header {
+  z-index: 120000;
+}
+
+.navbar-brand img {
+  max-width: 250px;
+}
+
+.bg-danger,
+.btn-danger {
+  background: var(--color-danger);
+}
+
+.text-danger {
+  color: var(--color-danger);
+}
+
+.bg-brand,
+.btn-brand {
+  background: var(--color-brand);
+}
+
+.text-brand {
+  color: var(--color-brand);
+}
+
+.bg-primary,
+.btn-primary {
+  background: var(--color-primary);
+}
+
+.text-primary {
+  background: var(--color-primary);
+}
+
+.bg-light {
+  background: var(--color-white);
+}
+
+.text-light {
+  color: var(--color-white);
+}
+
+.bg-gray-light {
+  background: var(--color-gray-light);
+}
+
+.text-gray-light {
+  color: var(--color-gray-light);
+}
+
+.bg-gray {
+  background: var(--color-gray-light);
+}
+
+.text-gray {
+  color: var(--color-gray-light);
+}
+
+.bg-black {
+  background: var(--color-black);
+}
+
+.text-black {
+  color: var(--color-black);
+}
+
+.image {
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.navbar li a {
+  padding: 0 12px;
+}
+
+.navbar li a i {
+  opacity: 0.6;
+  padding: 0 8px;
+}
+
+.clear {
+  clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--roboto);
+}
+
+.text-roboto {
+  font-family: var(--roboto);
+}
+
+.text-helvetica {
+  font-family: var(--helvetica);
+}
+
+.divider {
+  height: 1px;
+  clear: both;
+}
+
+.wrap-search {
+  max-width: 740px;
+  background: rgb(52, 51, 151, 0.7);
+}
+
+.form-group input {
+  border-width: 0;
+}
+
+/* !! overwrite bootstrap blue border!! */
+.form-control:focus {
+  outline: 1px;
+  -webkit-appearance: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+.radius-1 {
+  border-radius: 4px;
+}
+
+.radius-2 {
+  border-radius: 8px;
+}
+
+.radius-3 {
+  border-radius: 12px;
+}
+
+.radius-4 {
+  border-radius: 16px;
+}
+
+.radius-5 {
+  border-radius: 22px;
+}
+
+.radius-6 {
+  border-radius: 50%;
+}
+
+.welcome-none {
+  height: 65vh;
+}
+
+.wrap-categories .one-cat {
+  margin: 0 10px;
+  border-radius: 8px 50px 8px 50px;
+  border-top: 10px solid #403ea8;
+  border-bottom: 10px solid #403ea8;
+}
+
+#about-us {
+  font-size: 18px;
+}
+
+.slogan-description {
+  font-size: 24px;
+}
+
+#intro {
+  background: url('../images/person-tutoring.jpg');
+}
+
+#categories {
+  background: url('../images/more-cat.jpg');
+}
+
+#intro,
+#categories {
+  width: 100%;
+  overflow: hidden;
+  min-height: 75vh;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.wrapper-course-title {
+  height: 45vh;
+}
+
+#course-title {
+  width: 100%;
+  overflow: hidden;
+  min-height: 45vh;
+  position: relative;
+  background: url('../images/person-tutoring.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+#intro::before,
+#categories::before,
+#course-title::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#intro::before {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#course-title::before {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#categories::before {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#categories .image {
+  min-height: 240px;
+}
+
+footer .list-inline-item a {
+  padding: 0 15px;
+  color: var(--color-white);
+}
+
+.course-details p {
+  margin: 5px 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .wrap-categories {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .wrap-categories .one-cat {
+    flex: 1 1 auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .navbar-brand {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .wrap-categories {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-brand {
+    margin: 0;
+    float: left;
+  }
+
+  .wrap-categories {
+    display: flex;
+    flex: 0 0 wrap;
+  }
+
+  .wrap-course-details {
+    display: flex;
+  }
+
+  .course-details {
+    flex-grow: 1;
+    width: 70%;
+  }
+
+  .course-enroll {
+    flex-grow: 1;
+    width: 30%;
+    max-width: 350px;
+  }
+}
