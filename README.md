@@ -3,6 +3,9 @@
 
 > This is project is for learning purpose
 
+# Screenshot
+![screenshot](./images/screenshot.png)
+
 # Built With
 - HTML
 - CSS
@@ -10,7 +13,7 @@
 - Font Awesome
 
 Link to live page
-https://github.com/kagaramag/ke-courses/blob/develop/index.html
+https://raw.githack.com/kagaramag/ke-courses/develop/index.html
 
 # Authors
 👤 Gilles Kagarama
